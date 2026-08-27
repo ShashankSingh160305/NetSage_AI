@@ -1,0 +1,31 @@
+case_id,ai_root_cause,expected_fault_case,review_status,correction_note
+CASE001,Router1 GigabitEthernet0/0 is administratively down,Router1 GigabitEthernet0/0 is administratively down,Accepted,
+CASE002,Incorrect or failed switch port configuration,Incorrect or failed switch port configuration,Accepted,
+CASE003,Incorrect default gateway configured on PC0,Incorrect default gateway configured on PC0,Accepted,
+CASE004,PC1 has an incorrect IP subnet configuration,PC1 has an incorrect IP subnet configuration,Accepted,
+CASE005,PC0 is configured in the wrong subnet,PC0 is configured in the wrong subnet,Edited,"AI root cause is correct, but the recommendation should specifically address PC0 being in the wrong subnet by checking its IP address and subnet mask."
+CASE006,Inter-VLAN routing configuration missing,Inter-VLAN routing configuration missing,Accepted,
+CASE007,VLAN 20 router subinterface is down,VLAN 20 router subinterface is down,Edited,"AI root cause is correct, but the recommendation should specifically address the down VLAN 20 router subinterface and verify that it is correctly configured and up."
+CASE008,Access port assigned to wrong VLAN,Access port assigned to wrong VLAN,Accepted,
+CASE009,Switch-to-switch/router link configured as access port,Switch-to-switch/router link configured as access port,Accepted,
+CASE010,Required VLAN not allowed on trunk,Required VLAN not allowed on trunk,Accepted,
+CASE011,DHCP service or pool is unavailable,DHCP service or pool is unavailable,Accepted,
+CASE012,DHCP pool has incorrect network configuration,DHCP pool has incorrect network configuration,Accepted,
+CASE013,Incorrect default-router option in DHCP pool,Incorrect default-router option in DHCP pool,Accepted,
+CASE014,DHCP pool is missing or incorrectly configured,DHCP pool is missing or incorrectly configured,Accepted,
+CASE015,Incorrect DNS server configured on client,Incorrect DNS server configured on client,Accepted,
+CASE016,Client points to incorrect DNS server,Client points to incorrect DNS server,Accepted,
+CASE017,DNS server is in an unreachable subnet,DNS server is in an unreachable subnet,Accepted,
+CASE018,Incorrect DNS server address supplied by DHCP,Incorrect DNS server address supplied by DHCP,Edited,"AI root cause is correct, but the recommendation should specifically correct the DNS server address supplied by the DHCP pool and renew the client lease."
+CASE019,Missing route to remote network,Missing route to remote network,Accepted,
+CASE020,Incorrect next-hop address in static route,Incorrect next-hop address in static route,Accepted,
+CASE021,Router interface toward remote network is shutdown,Router interface toward remote network is shutdown,Edited,"AI root cause is correct, but the recommendation should explicitly instruct the reviewer to enable the shutdown router interface and verify that it becomes up/up."
+CASE022,Required static route was removed,Required static route was removed,Accepted,
+CASE023,ACL denies traffic from source network,ACL denies traffic from source network,Accepted,
+CASE024,ACL blocks HTTP traffic,ACL blocks HTTP traffic,Accepted,
+CASE025,ACL contains an incorrect deny statement,ACL contains an incorrect deny statement,Accepted,
+CASE026,ACL applied in the wrong direction/interface,ACL applied in the wrong direction/interface,Accepted,
+CASE027,NAT configuration is missing or inactive,NAT configuration is missing or inactive,Accepted,
+CASE028,NAT inside/outside interface configuration is incorrect,NAT inside/outside interface configuration is incorrect,Accepted,
+CASE029,NAT access list does not include all internal hosts,NAT access list does not include all internal hosts,Edited,"AI root cause is correct, but the recommendation should explicitly update the NAT access list so that all required internal hosts are included."
+CASE030,Wireless client is not properly associated with the access point,Wireless client is not properly associated with the access point,Accepted,
